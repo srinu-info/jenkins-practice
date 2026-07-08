@@ -6,6 +6,9 @@ pipeline {
         name='jenkins'
 
     }
+    options:{
+        timeout:{time:10 , unit: 'SECONDS'}
+    }
 
     stages {
         stage('Build') {
@@ -13,6 +16,7 @@ pipeline {
                 script{
                      sh """
                      echo '****************'
+                     sleep 11
                      env
                      """
                 }               
