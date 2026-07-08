@@ -5,27 +5,28 @@ pipeline {
 
     stages {
         stage('Build') {
-            script{
             steps {
-                echo 'Building..'
-                }
+                script{
+                     echo 'Building..'
+                }               
             }
         }
         stage('Test') {
-            script{
             steps {
-                echo 'testing..'
-                }
+               script{
+                     echo 'Teesting..'
+                }               
             }
-        }
+            }        
         stage('Deploy') {
-            script{
             steps {
-                echo 'deploying..'
-                }
+               script{
+                     echo 'Deploying..'
+                }               
+            }
             }
         }
-    }
+    
     post{
         always{
             echo 'i will always run'
