@@ -6,8 +6,9 @@ pipeline {
         name='jenkins'
 
     }
-    options:{
+    options{
         timeout:{time: 10, unit: 'SECONDS'}
+        disableConsurrentBuilds()
     }
 
     stages {
