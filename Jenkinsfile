@@ -7,7 +7,7 @@ pipeline {
 
     }
     options:{
-        timeout:{time:10 , unit: 'SECONDS'}
+        timeout:{time: 10, unit: 'SECONDS'}
     }
 
     stages {
@@ -16,7 +16,7 @@ pipeline {
                 script{
                      sh """
                      echo '****************'
-                     sleep 11
+                     sleep 10
                      env
                      """
                 }               
