@@ -12,7 +12,7 @@ pipeline {
             steps {
                 script{
                      sh """
-                     echo '****************
+                     echo '****************'
                      env
                      """
                 }               
